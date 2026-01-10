@@ -1,0 +1,19 @@
+org.jetbrains.completion.full.line
+intellij.webp
+aws.toolkit.core
+com.jetbrains.space
+Subversion
+com.intellij.spring
+String Manipulation
+Key Promoter X
+com.jetbrains.restClient
+PlantUML integration
+net.seesharpsoft.intellij.plugins.csv
+org.jetbrains.idea.maven
+izhangzhihao.rainbow.brackets
+com.chrisrm.idea.MaterialThemeUI
+com.github.copilot
+com.mallowigi
+zielu.gittoolbox
+mobi.hsz.idea.gitignore
+aws.toolkit

@@ -1,0 +1,71 @@
+{
+  "editor.suggestSelection": "first",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "eslint.format.enable": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSaveMode": "modifications",
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.renderControlCharacters": true,
+  "editor.wordWrap": "on",
+  "files.trimFinalNewlines": true,
+  "breadcrumbs.enabled": true,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.lineNumbers": "on",
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.minimap.enabled": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "redhat.telemetry.enabled": false,
+  "git.ignoreMissingGitWarning": true,
+  "search.smartCase": true,
+  "explorer.compactFolders": false,
+  "cSpell.languageSettings": [
+
+  ],
+  "cSpell.userWords": [
+    "hoge",
+    "huga",
+    "piyo"
+  ],
+  "yaml.schemas": {
+    // "kubernetes": ["*.yml", "*.yaml"]
+  },
+  "workbench.editor.wrapTabs": true,
+  "javascript.preferGoToSourceDefinition": true,
+  "typescript.preferGoToSourceDefinition": true,
+  "explorer.confirmDelete": false,
+  "workbench.settings.applyToAllProfiles": [
+
+  ]
+}
