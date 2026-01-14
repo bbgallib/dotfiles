@@ -10,6 +10,7 @@
 	autocrlf = input
 	ignorecase = false
 	quotepath = false
+	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
 [credential]

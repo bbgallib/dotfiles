@@ -40,7 +40,9 @@
   "breadcrumbs.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.lineNumbers": "on",
-  "editor.fontSize": 13,
+  "editor.fontFamily": "'HackGen', 'PlemolJP', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.5,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.minimap.enabled": false,
@@ -67,5 +69,7 @@
   "explorer.confirmDelete": false,
   "workbench.settings.applyToAllProfiles": [
 
-  ]
+  ],
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }
