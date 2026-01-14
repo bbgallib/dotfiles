@@ -29,6 +29,14 @@ run defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 run defaults write NSGlobalDomain "com.apple.keyboard.fnState" -bool true
 run defaults write NSGlobalDomain "com.apple.trackpad.scaling" -float 2.5
 
+# Input Sources (non-default)
+run defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled -int 0
+run defaults write com.apple.inputmethod.Kotoeri JIMPrefCapsLockActionKey -int 4
+if ! defaults read com.apple.HIToolbox AppleEnabledInputSources 2>/dev/null | grep -q "com.apple.inputmethod.Roman"; then
+  run defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add \
+    '{ "Bundle ID" = "com.apple.inputmethod.Kotoeri.RomajiTyping"; "Input Mode" = "com.apple.inputmethod.Roman"; InputSourceKind = "Input Mode"; }'
+fi
+
 # Screenshots / Control Center / Power / Updates are omitted because they match macOS defaults.
 
 run killall Dock Finder >/dev/null 2>&1 || true
