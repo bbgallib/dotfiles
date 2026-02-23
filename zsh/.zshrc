@@ -13,6 +13,7 @@ autoload -Uz compinit
 compinit -u
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="$HOME/.local/bin:$PATH" # for Claude Code
 export PATH="$HOME/.cargo/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home -v "25" 2>/dev/null || true)
 if [ -n "$JAVA_HOME" ]; then

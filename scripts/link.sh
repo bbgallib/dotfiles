@@ -34,5 +34,8 @@ link_file "$ROOT_DIR/zsh/.zshenv" "$HOME/.zshenv"
 link_file "$ROOT_DIR/zsh/starship.toml" "$HOME/.config/starship.toml"
 link_file "$ROOT_DIR/git/.gitconfig" "$HOME/.gitconfig"
 link_file "$ROOT_DIR/git/.gitignore_global" "$HOME/.gitignore_global"
+link_file "$ROOT_DIR/claude/settings.json"    "$HOME/.claude/settings.json"
+link_file "$ROOT_DIR/claude/CLAUDE.md"        "$HOME/.claude/CLAUDE.md"
+link_file "$ROOT_DIR/claude/keybindings.json" "$HOME/.claude/keybindings.json"
 
 printf 'Linked dotfiles. Backup directory: %s\n' "$BACKUP_DIR"
