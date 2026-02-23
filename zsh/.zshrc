@@ -14,7 +14,7 @@ compinit -u
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-export JAVA_HOME=$(/usr/libexec/java_home -v "21" 2>/dev/null || true)
+export JAVA_HOME=$(/usr/libexec/java_home -v "25" 2>/dev/null || true)
 if [ -n "$JAVA_HOME" ]; then
   PATH="${JAVA_HOME}/bin:${PATH}"
 fi
@@ -147,3 +147,5 @@ alias kdpo='kubectl describe po'
 alias kdde='kubectl describe deploy'
 alias kdcm='kubectl describe configmap'
 alias kcc='kubectl config current-context'
+
+eval "$(starship init zsh)"

@@ -24,12 +24,14 @@ link_file() {
     run mv "$dest" "$BACKUP_DIR/"
   fi
 
+  run mkdir -p "$(dirname "$dest")"
   run ln -s "$src" "$dest"
 }
 
 link_file "$ROOT_DIR/zsh/.zshrc" "$HOME/.zshrc"
 link_file "$ROOT_DIR/zsh/.zprofile" "$HOME/.zprofile"
 link_file "$ROOT_DIR/zsh/.zshenv" "$HOME/.zshenv"
+link_file "$ROOT_DIR/zsh/starship.toml" "$HOME/.config/starship.toml"
 link_file "$ROOT_DIR/git/.gitconfig" "$HOME/.gitconfig"
 link_file "$ROOT_DIR/git/.gitignore_global" "$HOME/.gitignore_global"
 
