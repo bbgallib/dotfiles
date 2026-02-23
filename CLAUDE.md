@@ -24,6 +24,11 @@ Installs Homebrew (if missing), runs `brew bundle`, symlinks dotfiles via `link.
 ./scripts/link.sh
 ```
 
+**Register MCP servers (run once after installing Claude Code):**
+```sh
+./scripts/setup-mcp.sh
+```
+
 **Install/update Homebrew packages only:**
 ```sh
 brew bundle --file Brewfile
@@ -43,6 +48,9 @@ DRY_RUN=1 ./scripts/bootstrap.sh
 - `zsh/starship.toml` → `$HOME/.config/starship.toml`
 - `git/.gitconfig`, `git/.gitignore_global` → `$HOME/`
 - `claude/settings.json`, `claude/CLAUDE.md`, `claude/keybindings.json` → `$HOME/.claude/`
+- `claude/hooks/statusline.sh` → `$HOME/.claude/hooks/statusline.sh`
+
+**`.mcp.json`** is tracked in git at the repo root. It configures project-scoped MCP servers for this dotfiles project. User-scoped MCP servers (shared across all projects) are registered separately via `scripts/setup-mcp.sh`.
 
 **Brewfile** manages CLI tools, GUI apps (casks), and VS Code extensions in a single file.
 
